@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body style="background-color: antiquewhite;">
+    
+    <h1>Formulário</h1>
+    <!-- A tag form serve como container, todos os campos deverão estar nessa tag-->
+    <form>
+        <label for="text">seu nome:</label>
+        <!--input serve para criar um campo no seu formulario!-->     <!--com o atributo "Required", os campos do formulario se tornam obrigatorios-->
+        <input id="text" type="text" placeholder="Seu nome" required>
+        <br>
+        <!--Faça nessa ordem para melhor forma de preparar seu HTML-->
+        <label for="email">seu email:</label>
+        <input id="email" type="email" placeholder="seu email" required>
+        <br>
+        <label for="senha">sua senha:</label>
+        <input id="senha" type="password" placeholder="Digite sua senha!" required>
+        <br>
+        <!--Importantissimo, esse atributo serve para voce enviar o formulario!-->
+        <input type="submit" value="enviar Formulário">
+        <!--fim da explicação-->
+        <h2>O que você tem em casa?</h2>
+        <!--Usamos o atributo checkbox serve para opções de multipla escolha-->
+        <input type="checkbox" name="item1" value="televisão" >
+        <label for="item1">televisão</label>
+        <input type="checkbox" name="item2" value="geladeira">
+        <label for="item3">computador</label>
+        <input type="checkbox" name="item3" value="geladeira">
+        <label for="item3">computador</label>
+        <!--Atributo para seleção de coisas-->
+        <h2>Escolha uma cor desejada</h2>
+        <select name="cores">
+            <option value="vermelho">vermelho</option>
+            <option value="azul">azul</option>
+            <option value="amarelo">amarelo</option>
+            <option value="verde">verde</option>
+        </select>
+        <p>
+            qual sua cor favorita?
+        </p>
+        <!--Muito cuidado com a semantica desses atributos, colocar todos na ordem correta para que nao ocorra erros na hora de abrir o codigo!-->
+        <input type="radio" name="cor-favorita" id="cor-vermelha"> <label for="cor-vermelha">vermelho</label>
+        <input type="radio" name="cor-favorita" id="cor-amarelo"> <label for="cor-amarelo">amarelo</label>
+        <input type="radio" name="cor-favorita" id="cor-preto"> <label for="cor-preto">preto</label>
+        <input type="radio" name="cor-favorita" id="cor-azul"> <label for="cor-azul">azul</label>
+        <br>
+        <h2>Alguns links simples </h2>
+        <ol><!--"A"  serve para criar links, informamos para qual endereço o usuário será levado através do atributo href-->
+            <li>
+                <a href="https://i.pinimg.com/564x/26/b4/1a/26b41a6f020a3220336b1e7526cb5ea2.jpg" target="_blank" title="pica pal marolado kkkkk">mano isso aqui me quebrou dms</a>
+            </li>
+        <br>
+            <li>
+                <a href="https://i.pinimg.com/564x/a0/3e/f8/a03ef89f2723f320816d383988a11ad0.jpg" target="_blank" title="O pai da putaria">Cacetadas e firulas</a>
+            </li>
+        <!--Usando o atributo target blank voce poderá abrir o link que voce criou em uma nova guia!!!!!!!!-->
+        <br>
+            <li>
+                <a href="https://google.com.br" target="_blank">ir para o google</a>
+            </li>
+        </ol>
+        <h2>Imagem aleatorio para experimento completamente sex</h2>
+        <!--Usamos o atributo width serve para aumentar ou diminuir o tamanho da imagem que voce colocou-->
+        <img src="https://th.bing.com/th/id/R.4559c45eeb2dad708d0b4dcefb1e73ee?rik=by9%2bWrFvcNPmVw&pid=ImgRaw&r=0" width="300">   
+        <h2><i>Principais bandas na minha opinião</i></h2>
+        <ol>
+            <li>
+                <h3>
+                Avenged sevenfold
+                </h3>
+            </li>
+            <li>
+                <H3>
+                metallica
+                </H3>
+            </li>    
+            <li>
+                <H3>    
+                AC/DC
+                </H3>     
+            </li>
+            <li>
+                <h3>
+                type o negative   
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    Danzig
+                </h3>
+            </li>
+        </ol>
+        <h2>Gostou do Formulário? digite abaixo, o que podemos melhorar nos proximos</h2>
+        <!--serve para voce escrever mensagens, uma area de texto para o usuario-->
+        <textarea name="mensagem" placeholder="sua mensagem" rows="20" cols="55"></textarea>
+        <p><abbr title="Hypertext markup language">HTML</abbr></p>
+        <p> &copy Formulário simples serve como intuito de aprendizado do talvez <mark>futuro dev Joao pedro silva</mark>, espero ganhar muito dinheiro com isso pqp</p>
+    </form>
+</body>
+</html>
